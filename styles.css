@@ -16,15 +16,8 @@ h5 {
     color: #999;
     font-weight: 300;
     font-size: 18px;
-    margin: -10px 0 0px 0px;
+    margin: -15px 0 0px 0px;
 }
-
-.links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
 a:link {
     text-decoration: none;
     font-weight: 300;
@@ -35,7 +28,7 @@ a:link {
 }
 
 a:link:hover {
-    color: #326FB5;
+    color: #999;
 }
 
 a:visited {
@@ -44,12 +37,9 @@ a:visited {
 
 .pageWrap {
     height: 100vh;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .backgroundImg {
@@ -67,11 +57,17 @@ a:visited {
 
 .card {
     box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
-    width: 350px;
-    height: 210px;
+    width: 330px;
+    height: 180px;
     box-sizing: border-box;
     padding: 10px 30px;
     z-index: 1;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 a#eMail::before {
@@ -96,4 +92,10 @@ a#github::before {
     margin-right: 10px;
     font-size: 14px;
     color: #326FB5;
+}
+
+@media screen and (max-width: 900px){
+    .backgroundImg {
+        display: none;
+    }
 }
