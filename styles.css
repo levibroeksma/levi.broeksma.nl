@@ -18,7 +18,7 @@ h5 {
     color: #999;
     font-weight: 300;
     font-size: 18px;
-    margin: -15px 0 0px 0px;
+    margin: -15px 0 0 0;
 }
 
 a:link {
@@ -60,15 +60,16 @@ a:visited {
     left: 50px;
 }
 
-/*Businesscard*/
+/*Business card*/
 
 .card {
-    box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
     width: 330px;
     height: 180px;
     box-sizing: border-box;
     padding: 10px 30px;
     z-index: 1;
+    background: #fff;
 }
 
 .links {
@@ -99,12 +100,4 @@ a#github::before {
     margin-right: 10px;
     font-size: 14px;
     color: #326FB5;
-}
-
-/*Responsive*/
-
-@media screen and (max-width: 900px){
-    .backgroundImg {
-        display: none;
-    }
 }
